@@ -4,8 +4,8 @@ const router = require("express").Router()
 
 router
     .get("/", getTodo)
-    .post("/add-todo", addTodo)
-    .put("/update-todo/:id", updateTodo)
-    .delete("/delete-todo/:id", deleteTodos)
+    .post("/add", addTodo)
+    .put("/update/:id", updateTodo)
+    .delete("/delete/:id", deleteTodos)
 
 module.exports = router
